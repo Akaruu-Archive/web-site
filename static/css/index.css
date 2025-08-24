@@ -1,0 +1,76 @@
+.app {
+  background-color: #1f1d1d;
+}
+.app .top {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.app .top .title {
+  font-size: 2rem;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app .top .title img {
+  width: 50px;
+  padding-left: 6px;
+}
+.app .top .desc {
+  font-size: 2rem;
+  color: whitesmoke;
+}
+.app .mid .title {
+  color: whitesmoke;
+}
+.app .mid .preitem {
+  padding-left: 50px;
+}
+.app .mid .preitem .title {
+  font-size: 1.35rem;
+}
+.app .mid .preitem .list {
+  padding: 50px;
+  display: flex;
+  overflow-y: auto;
+  width: auto;
+}
+.app .mid .preitem .list .item {
+  padding: 15px;
+  margin-right: 25px;
+  background-color: #0f0e0e;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.app .mid .preitem .list .item img {
+  width: 250px;
+  height: 140px;
+}
+.app .mid .preitem .list .item .title {
+  padding-top: 5px;
+  font-size: 1rem;
+}
+.app .mid .preitem .list .item .desc {
+  padding-top: 5px;
+  font-size: 0.9rem;
+  color: whitesmoke;
+}
+
+@media (max-width: 640px) {
+  .app .top .title,
+  .app .top .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+  .app .mid .preitem .list {
+    padding-left: 0 !important;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

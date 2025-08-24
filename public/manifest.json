@@ -1,0 +1,26 @@
+{
+  "name": "Akaruu Archive",
+  "short_name": "Akaruu Archive",
+  "description": "ici, tu vas trouver tous les meilleurs clips d’Akaruu, les VODs et bien plus.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1f1d1d",
+  "theme_color": "#79b0fe",
+  "icons": [
+    {
+      "src": "/imgs/icons/32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/imgs/icons/64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "/imgs/icons/128.png",
+      "sizes": "128x128png",
+      "type": "image/png"
+    }
+  ]
+}

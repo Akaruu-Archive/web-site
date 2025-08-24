@@ -1,0 +1,100 @@
+@use './var' as *;
+
+.app {
+  background-color: $colorApp;
+
+  .top {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .title {
+      font-size: 2rem;
+      color: whitesmoke;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 50px;
+        padding-left: 6px;
+      }
+    }
+
+    .desc {
+      font-size: 2rem;
+      color: whitesmoke;
+    }
+  }
+
+  .mid {
+    .title {
+      color: whitesmoke;
+    }
+
+    .preitem {
+      padding-left: 50px;
+
+      .title {
+        font-size: 1.35rem
+      }
+
+      .list {
+        padding: 50px;
+        display: flex;
+        overflow-y: auto;
+        width: auto;
+
+
+        .item {
+          padding: 15px;
+          margin-right: 25px;
+          background-color: #0f0e0e;
+          border-radius: 10px;
+          cursor: pointer;
+
+          img {
+            width: 250px;
+            height: 140px;
+          }
+
+          .title {
+            padding-top: 5px;
+            font-size: 1rem;
+          }
+
+          .desc {
+            padding-top: 5px;
+            font-size: 0.9rem;
+            color: whitesmoke;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .app {
+    .top {
+      .title,
+      .desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    .mid {
+      .preitem {
+        .list {
+          padding-left: 0 !important;
+        }
+      }
+    }
+  }
+}

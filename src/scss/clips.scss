@@ -1,0 +1,60 @@
+@use './var' as *;
+
+.app {
+  background-color: $colorApp;
+  padding: 50px;
+
+  .title {
+    color: whitesmoke;
+    font-size: 1.5rem;
+  }
+
+  .list {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .item {
+      padding: 15px;
+      background-color: $colorHeader;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-right: 25px;
+      margin-bottom: 25px;
+
+      img {
+        width: 250px;
+        height: 140px;
+      }
+
+      .title {
+        padding-top: 5px;
+        font-size: 1.5rem;
+      }
+
+      .desc {
+        padding-top: 2px;
+        font-size: 1rem;
+        color: whitesmoke;
+      }
+    }
+  }
+
+  .prebtnvid,
+  .btnvid {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
+
+  .prebtnvid > .btnvid {
+    padding: 5px;
+    background-color: #79b0fe; // <3
+    border-radius: 5px;
+    color: rgb(17, 16, 16);
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "outDir": "dist",
+    "rootDir": "./",
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": ["**/*.ts", "**/*.json", "**/*.css", "**/*.js", "**/*.html", "**/*.map", "**/*.txt", "**/*.png", "**/*.ico", "**/*.xml"],
+  "exclude": ["node_modules", "tests", "tsconfig.json", "tsconfig-code.json", "nodemon.json", "dist"]
+}

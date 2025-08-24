@@ -1,0 +1,12 @@
+User-agent: *
+
+Disallow: /api/
+Disallow: /imgs/
+Disallow: /favicon.ico
+Disallow: /manifest.json
+Dissalow: /search
+Allow: /
+Allow: /clips
+Allow: /vods
+Allow: /images
+Sitemap: 

@@ -1,0 +1,52 @@
+.app {
+  background-color: #1f1d1d;
+  padding: 50px;
+}
+.app .title {
+  color: whitesmoke;
+  font-size: 1.5rem;
+}
+.app .list {
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.app .list .item {
+  padding: 15px;
+  background-color: #1a1818;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+.app .list .item img {
+  width: 250px;
+  height: 140px;
+}
+.app .list .item .title {
+  padding-top: 5px;
+  font-size: 1.5rem;
+}
+.app .list .item .desc {
+  padding-top: 2px;
+  font-size: 1rem;
+  color: whitesmoke;
+}
+.app .prebtnvid,
+.app .btnvid {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.app .prebtnvid > .btnvid {
+  padding: 5px;
+  background-color: #79b0fe;
+  border-radius: 5px;
+  color: rgb(17, 16, 16);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=clips.css.map */

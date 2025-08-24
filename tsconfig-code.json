@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "outDir": "static/js/",
+    "esModuleInterop": true,
+    "noEmitOnError": true,
+    "module": "commonjs",
+    "target": "es6",
+    "sourceMap": true,
+    "strict": true
+  },
+  "include": [
+    "src/scripts/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

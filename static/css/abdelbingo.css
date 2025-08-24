@@ -1,0 +1,47 @@
+.app {
+  background-color: #1f1d1d;
+  padding: 50px 0 50px 0;
+}
+.app .content {
+  display: flex;
+  gap: 10px;
+  justify-items: end;
+  max-width: 100%;
+  font-family: Verdana;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+.app .item {
+  padding: 15px;
+  width: 50px;
+  white-space: normal;
+  overflow-wrap: break-word;
+  background-color: #202020;
+  color: #fff;
+  border-radius: 10px;
+  margin: 12px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+}
+.app .item:hover {
+  background-color: rgb(24, 22, 22);
+}
+.app .title {
+  color: #fff;
+  padding: 15px 0 0 20px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app .desc {
+  color: orange;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+/*# sourceMappingURL=abdelbingo.css.map */

@@ -1,0 +1,51 @@
+@use './var' as *;
+
+.app {
+  padding: 20px;
+  background-color: $colorApp;
+
+  .left {
+    * {
+      width: 1280px;
+      height: 720px;
+    }
+
+    .btns {
+      padding: 10px;
+    }
+  }
+
+  .right {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    font-size: 2.5rem;
+  }
+
+  .btns {
+    display: none;
+  }
+}
+
+@media (max-width: 1300px) {
+  .left>* {
+    width: 99% !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .app {
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      align-self: center;
+      color: whitesmoke;
+      font-size: 2rem;
+    }
+  }
+}
