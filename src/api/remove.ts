@@ -1,5 +1,8 @@
 import { Router, Request, Response } from 'express';
 import { deleteData } from '../functions/mongoDb';
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 const router = Router();
 

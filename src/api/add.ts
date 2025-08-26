@@ -1,8 +1,8 @@
 import { Router, Request, Response } from 'express';
 import { addData } from '../functions/mongoDb';
-// import * as dotenv from 'dotenv';
+import * as dotenv from 'dotenv';
 
-// dotenv.config();
+dotenv.config();
 
 const router = Router();
 
@@ -57,19 +57,14 @@ router.get('/', async (req, res) => {
 
   try {
     const data = {
-      url: urlFromHeader ?? '',
-      type: typeFromHeader,
+      url: urlFromHeader ?? "",
+      picture: pictureFromHeader,
       title: titleFromHeader,
       description: descriptionHeader,
-      cc: CCFromHeader ?? '',
+      cc: CCFromHeader ?? "",
     };
 
-    await addData(typeFromHeader, {
-      url: urlFromHeader ?? '',
-      title: titleFromHeader,
-      descriptionHeader: descriptionHeader,
-      cc: CCFromHeader ?? '',
-    });
+    await addData(typeFromHeader, data);
   } catch (error) {
     return res.status(500).json({
       error: true,
@@ -80,12 +75,12 @@ router.get('/', async (req, res) => {
 
   return res.json({
     statut: keyFromHeader,
-    url: urlFromHeader ?? '',
+    url: urlFromHeader,
     picture: pictureFromHeader,
     type: typeFromHeader,
     title: titleFromHeader,
     description: descriptionHeader,
-    cc: CCFromHeader ?? '',
+    cc: CCFromHeader,
   });
 });
 

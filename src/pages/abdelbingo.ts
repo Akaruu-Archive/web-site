@@ -4,7 +4,6 @@ import fs from 'fs';
 const headerHtml = fs.readFileSync('./static/html/header.html', 'utf8');
 const footerHtml = fs.readFileSync('./static/html/footer.html', 'utf8');
 const allCss = fs.readFileSync('./static/css/all.css', 'utf8');
-let btnMore = fs.readFileSync('./static/js/btnMore.js', 'utf8');
 let click = fs.readFileSync('./static/js/click.js', 'utf8');
 let css = fs.readFileSync('./static/css/abdelbingo.css', 'utf8');
 
@@ -20,7 +19,7 @@ router.get('/', async (req, res) => {
       <title>Akaruu Archive | Abdel Bingo</title>
       <style>${css}</style>
       <style>${allCss}</style>
-      <script>${btnMore + click}</script>
+      <script>${click}</script>
       <link rel="icon" href="/favicon.ico" type="image/x-icon">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta property="og:title" content="Akaruu Archive | Abdel Bingo">
@@ -73,9 +72,7 @@ router.get('/', async (req, res) => {
           <div class="item" onclick="select(this, 33)">t pas rentrée dans son jeu</div>
           <div class="item" onclick="select(this, 34)">a 1h02 y a plus de modo</div>
           <div class="item" onclick="select(this, 35)">MashAllah</div>
-          <!-- <div class="item" onclick="select(this, 36)">MDR</div> -->
-          <!-- <div class="item" onclick="select(this);">je reconnais les fakes fams</div> -->
-          <!-- <div class="item" onclick="select(this);">ca fait 8ans je bois pas de coca</div> -->
+          <div class="item" onclick="select(this, 36)">jai vu 1k porno</div>
         </div>
       </div>
       <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
