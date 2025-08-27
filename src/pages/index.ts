@@ -56,7 +56,6 @@ router.get('/', async (req, res) => {
   var clips = "";
   const clipsList = await getAllData("clips", "createAt", -1, 6);
   for (let i = 0; i <= clipsList.length-1; i++) {
-    console.log(clipsList)
     clips += `
     <div class="item" onclick="Aclick(1, '${clipsList[i]._id}');">
       <img src="${clipsList[i].picture}"/>

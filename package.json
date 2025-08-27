@@ -2,7 +2,7 @@
   "name": "akaruu-archive",
   "version": "1.0.0",
   "description": "ici, tu vas trouver tous les meilleurs clips de Akaruu, les VODs et bien plus.",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "dev-server": "nodemon ./src/index.ts",
     "dev-style": "nodemon --exec \"sass ./src/scss/abdelbingo.scss ./static/css/abdelbingo.css\"",
@@ -11,8 +11,8 @@
     "start": "node ./src/index.js"
   },
   "keywords": [],
-  "author": "lagent_titi & 6F",
-  "license": "ISC",
+  "author": "",
+  "license": "",
   "type": "commonjs",
   "devDependencies": {
     "@types/axios": "^0.9.36",

@@ -74,7 +74,6 @@ router.get('/', async (req, res) => {
   }
 
   return res.json({
-    statut: keyFromHeader,
     url: urlFromHeader,
     picture: pictureFromHeader,
     type: typeFromHeader,

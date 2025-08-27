@@ -13,7 +13,7 @@ const loadRoutesFromDir = async (dirPath: string, routePrefix: string) => {
   if (!fs.existsSync(fullDirPath)) {
     console.warn(`❌ Le dossier "${fullDirPath}" n'existe pas.`);
     return;
-  }
+  };
 
   const files = fs.readdirSync(fullDirPath);
 
@@ -33,11 +33,11 @@ const loadRoutesFromDir = async (dirPath: string, routePrefix: string) => {
         console.log(`✅ Route chargée: ${fullRoute || '/'} depuis ${file}`);
       } else {
         console.warn(`⚠️ ${file} ne contient pas une exportation par défaut de type fonction.`);
-      }
+      };
     } catch (err) {
       console.error(`❌ Erreur lors du chargement de ${file}:`, err);
-    }
-  }
+    };
+  };
 };
 
 loadRoutesFromDir('./api', '/api');

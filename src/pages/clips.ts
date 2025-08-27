@@ -69,6 +69,7 @@ router.get('/', async (req, res) => {
   } else {
     let css = fs.readFileSync('./static/css/clip.css', 'utf8');
     let data = await getData("clips", watch)
+
     res.send(`
       <!DOCTYPE html>
       <html lang="fr">
