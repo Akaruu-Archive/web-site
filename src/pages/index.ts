@@ -41,17 +41,18 @@ router.get('/', async (req, res) => {
 
   let i = Math.floor(Math.random() * emojiList.length);
 
-  var vods = "";
-  const vodsList = await getAllData("vods", "createAt", -1, 6);
-  for (let i = 0; i <= vodsList.length-1; i++) {
-    vods += `
-    <div class="item" onclick="Aclick(2, '${vodsList[i]._id}');">
-      <img src="${vodsList[i].picture}"/>
-      <div class="title">${vodsList[i].title}</div>
-      <div class="desc">${vodsList[i].description}</div>
-    </div>
-  `;
-  }
+  // var vods = "";
+  // const vodsList = await getAllData("vods", "createAt", -1, 6);
+  // for (let i = 0; i <= vodsList.length-1; i++) {
+  //   vods += `
+  //   <div class="item" onclick="Aclick(2, '${vodsList[i]._id}');">
+  //     <img src="${vodsList[i].picture}"/>
+  //     <div class="title">${vodsList[i].title}</div>
+  //     <div class="desc">${vodsList[i].description}</div>
+  //   </div>
+  // `;
+  // }
+  let vods="";
 
   var clips = "";
   const clipsList = await getAllData("clips", "createAt", -1, 6);
@@ -102,16 +103,16 @@ router.get('/', async (req, res) => {
       <div class="app">
         <div class="top">
           <div class="title">Bienvenue sur Akaruu Archive <img src="${emojiList[i]}"/></div>
-          <div class="desc">ci, tu vas trouver tous les meilleurs clips d’Akaruu, les VODs et bien plus.</div>
+          <div class="desc">ci, tu vas trouver tous les meilleurs clips d’Akaruu et bien plus.</div>
           <div class="btnlist">
 
           </div>
         </div>
         <div class="mid">
-          <div class="preitem">
+          <!-- <div class="preitem">
             <div class="title">VODS:</div>
             <div class="list">${vods}</div>
-          </div>
+          </div> -->
           <div class="preitem">
             <div class="title">ClIPS:</div>
               <div class="list">${clips}</div>
